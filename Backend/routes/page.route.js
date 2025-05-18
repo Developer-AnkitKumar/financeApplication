@@ -7,3 +7,5 @@ router.get("/", getHomePage);
 router.get("/about", getAboutPage);
 
 export default router;
+
+// Page routes

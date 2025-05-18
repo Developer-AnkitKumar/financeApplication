@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
 
+// User Schema
 const userSchema = new Schema({
     avatar: {
         type: {

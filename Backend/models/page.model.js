@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Page Schema
 const pageSchema = new mongoose.Schema({
     title: {
       type: String,

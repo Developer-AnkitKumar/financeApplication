@@ -7,7 +7,7 @@ import {
 } from '../utils/token.js';
 import crypto from 'crypto';
 
-// Create user
+// Create user in this section
 const registerUser = asyncHandler(async (req, res) => {
   const { fullname, email, password } = req.body;
 

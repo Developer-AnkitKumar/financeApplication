@@ -1,5 +1,6 @@
 import { Page } from "../models/page.model.js";    
 
+// Get Home Page
 export const getHomePage = async (req, res) => {
     const page = await Page.findOne({ name: "home" });
     res.status(200).json({ message: "Welcome to the Home Page", page });
