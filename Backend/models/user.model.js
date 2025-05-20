@@ -15,14 +15,6 @@ const userSchema = new Schema({
             localpath: `https://res.cloudinary.com/dqj0xg3zv/image/upload/v1698231234/avatars/default-avatar.png`,
         }
     },
-    username: {
-        type: String,
-        required: true,
-        unique: true,
-        lowercase: true,
-        index : true,
-        trim: true,
-    },
     email: {
         type: String,
         required: true,
@@ -40,38 +32,38 @@ const userSchema = new Schema({
         required: true,
         trim: true,
     },
-    isEmailVerified: {
-        type: Boolean,
-        default: false,
-    },
-    forgotPasswordToken: {
-        type: String,
-        default: null,
-    },
-    forgotPasswordTokenExpiry: {
-        type: Date,
-        default: null,
-    },
-    refreshToken: {
-        type: String,
-        default: null,
-    },
-    emailVerificationToken: {
-        type: String,
-        default: null,
-    },
-    emailVerificationTokenExpiry: {
-        type: Date,
-        default: null,
-    },
-    isDeleted: {
-        type: Boolean,
-        default: false,
-    },
-    isActive: {
-        type: Boolean,
-        default: true,
-    },
+    // isEmailVerified: {
+    //     type: Boolean,
+    //     default: false,
+    // },
+    // forgotPasswordToken: {
+    //     type: String,
+    //     default: null,
+    // },
+    // forgotPasswordTokenExpiry: {
+    //     type: Date,
+    //     default: null,
+    // },
+    // refreshToken: {
+    //     type: String,
+    //     default: null,
+    // },
+    // emailVerificationToken: {
+    //     type: String,
+    //     default: null,
+    // },
+    // emailVerificationTokenExpiry: {
+    //     type: Date,
+    //     default: null,
+    // },
+    // isDeleted: {
+    //     type: Boolean,
+    //     default: false,
+    // },
+    // isActive: {
+    //     type: Boolean,
+    //     default: true,
+    // },
 
 }, { timestamps: true });
 

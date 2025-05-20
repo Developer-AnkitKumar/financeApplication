@@ -9,8 +9,9 @@ import User from '../models/user.model.js';
 // Auth routes
 const router = Router();
 
-router.route("/register")
-.post(userResgisterValidator(), validate, registerUser); // Register a new user
+// router.route("/register")
+// .post(userResgisterValidator(), validate, registerUser); // Register a new user
+router.post("/register", userResgisterValidator, validate, registerUser);
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
