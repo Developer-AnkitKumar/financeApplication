@@ -2,7 +2,7 @@ import { Router } from "express";
 import {registerUser} from "../controllers/auth.controller.js";
 import {userResgisterValidator} from "../validators/index.js";  
 import {validate} from "../middlewares/validator.middleware.js"; 
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import User from '../models/user.model.js';   
 
 
