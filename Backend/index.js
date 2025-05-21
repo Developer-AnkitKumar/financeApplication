@@ -6,7 +6,7 @@ import authRoutes from './routes/auth.route.js';
 import pageRoutes from './routes/page.route.js';
 import Path from 'path';
 import { fileURLToPath } from 'url';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import User from './models/user.model.js';
 
 
