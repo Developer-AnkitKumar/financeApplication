@@ -1,5 +1,6 @@
 import { body } from "express-validator";
 
+// User Registration Validator
 export const userResgisterValidator = [
   body('fullname')
     .notEmpty().withMessage('Fullname is required')
