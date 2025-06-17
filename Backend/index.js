@@ -9,13 +9,15 @@ import { fileURLToPath } from 'url';
 import bcrypt from 'bcryptjs';
 import User from './models/user.model.js';
 
-
 dotenv.config({ 
     path: "./.env"
  });
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 // Middleware
 app.use(cors());
